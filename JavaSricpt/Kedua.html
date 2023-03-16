@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-image: url('Wallpaper.jpeg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<head>
+		<title>Denyva_215314074</title>
+	</head>
+
+	<script>
+		function submitForm() {
+			// Mengambil nilai dari input teks pilihan
+			var teksPilihan1 = document.getElementById("teksPilihan1").value;
+			var teksPilihan2 = document.getElementById("teksPilihan2").value;
+			var teksPilihan3 = document.getElementById("teksPilihan3").value;
+			var teksPilihan4 = document.getElementById("teksPilihan4").value;
+			var teksPilihan5 = document.getElementById("teksPilihan5").value;
+			// Membuat pilihan dalam bentuk radio button
+			var radioPilihan = "<input type='radio' name='pilihan' value='" + teksPilihan1 + "'>" + teksPilihan1 + "<br>";
+			radioPilihan += "<input type='radio' name='pilihan' value='" + teksPilihan2 + "'>" + teksPilihan2 + "<br>";
+			radioPilihan += "<input type='radio' name='pilihan' value='" + teksPilihan3 + "'>" + teksPilihan3 + "<br>";
+			radioPilihan += "<input type='radio' name='pilihan' value='" + teksPilihan4 + "'>" + teksPilihan4 + "<br>";
+			radioPilihan += "<input type='radio' name='pilihan' value='" + teksPilihan5 + "'>" + teksPilihan5 + "<br>";
+			// Membuat pilihan dalam bentuk drop down
+			var dropdownPilihan = "<select name='pilihan'>";
+			dropdownPilihan += "<option value='" + teksPilihan1 + "'>" + teksPilihan1 + "</option>";
+			dropdownPilihan += "<option value='" + teksPilihan2 + "'>" + teksPilihan2 + "</option>";
+			dropdownPilihan += "<option value='" + teksPilihan3 + "'>" + teksPilihan3 + "</option>";
+			dropdownPilihan += "<option value='" + teksPilihan4 + "'>" + teksPilihan4 + "</option>";
+			dropdownPilihan += "<option value='" + teksPilihan5 + "'>" + teksPilihan5 + "</option>";
+			dropdownPilihan += "</select>";
+			// Menampilkan pilihan
+			document.getElementById("radioPilihan").innerHTML = radioPilihan;
+			document.getElementById("dropdownPilihan").innerHTML = dropdownPilihan;
+		}   
+	</script>
+	</head>
+
+	<body>
+
+		<form>
+			<h3>Tolong mengetik sesuai dengan mengikuti bidota saya</h3>
+			<label for="teksPilihan1">Hobi Sepak Bola:</label>
+			<input type="text" id="teksPilihan1" name="teksPilihan1">
+			<br><br>
+			<label for="teksPilihan2">Kota Yogyakarta:</label>
+			<input type="text" id="teksPilihan2" name="teksPilihan2">
+			<br><br>
+			<label for="teksPilihan3">Kuliah USD :</label>
+			<input type="text" id="teksPilihan3" name="teksPilihan3">
+			<br><br>
+			<label for="teksPilihan4">Favorit Makanan Cumi-cumi goreng :</label>
+			<input type="text" id="teksPilihan4" name="teksPilihan4">
+			<br><br>
+			<label for="teksPilihan5">Favorit Minuman Good day:</label>
+			<input type="text" id="teksPilihan5" name="teksPilihan5">
+			<br><br>
+			<button type="button" onclick="submitForm()">Submit</button>
+		</form>
+		<br><br>
+		<h3>Pilihan dalam bentuk Radio Button:</h3>
+		<div id="radioPilihan"></div>
+		<br><br>
+		<h3>Pilihan dalam bentuk Drop Down:</h3>
+		<div id="dropdownPilihan"></div>
+
+		</p>
+
+		<input type="button" value="Ok" onclick="newDoc()">
+
+		<script>
+			function newDoc() {
+				window.location.assign("Finish_selesai.html")
+			}
+		</script>
+	</body>
+
+</html>
